@@ -34,7 +34,7 @@
 
   &__title
     font-size: 18px
-    font-family: $russo
+    font-family: $secondary_font
     line-height: 28px
     margin-top: 0
     margin-bottom: 15px
@@ -57,6 +57,12 @@
 
       @media(min-width: 1200px)
         font-size: 48px
+
+      &::-moz-selection
+        background: #fff
+
+      &::selection
+        background: #fff
 
   &__text-block
     margin-bottom: 5px

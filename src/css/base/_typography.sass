@@ -1,7 +1,7 @@
 body
   color: #fff
   color: #efefef
-  font-family: 'Roboto', 'Arial', sans-serif
+  font-family: $main_font
   font-weight: 400
   line-height: 1.375
 
@@ -18,7 +18,7 @@ h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6
-  font-family: $russo
+  font-family: $secondary_font
   font-weight: 400
   margin-top: 0
 
@@ -64,13 +64,19 @@ img
     &:first-child
       color: #fff
 
-      @media(min-width: 1200px)
+      //@media(min-width: 1200px)
         border-top: 2px solid transparent
         border-bottom: 2px solid currentColor
 
     &:nth-child(2)
       color: $main_color
 
-      @media(min-width: 1200px)
+      &::-moz-selection
+        background: #fff
+
+      &::selection
+        background: #fff
+
+      //@media(min-width: 1200px)
         border-bottom: 2px solid transparent
         border-top: 2px solid currentColor

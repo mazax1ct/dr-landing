@@ -1,5 +1,5 @@
 .slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat;
+  //background: #fff url("./ajax-loader.gif") center center no-repeat;
 }
 
 .slick-arrow {
@@ -77,7 +77,7 @@
 }
 
 .slick-dots li button {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: $main_font;
   font-weight: 400;
   display: block;
   width: 20px;

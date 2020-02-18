@@ -17,7 +17,7 @@
 .vs-title
   align-items: center
   display: flex
-  font-family: $russo
+  font-family: $secondary_font
   font-size: 14px
   justify-content: center
   max-width: 290px
@@ -57,8 +57,20 @@
         padding-left: 30px
         padding-right: 30px
 
+      &::-moz-selection
+        background: #fff
+
+      &::selection
+        background: #fff
+
     span
       color: $main_color
+
+      &::-moz-selection
+        background: #fff
+
+      &::selection
+        background: #fff
 
   br
     @media(min-width: 1200px)
