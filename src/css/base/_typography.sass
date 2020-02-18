@@ -62,19 +62,34 @@ img
 
   span
     &:first-child
-      color: #fff
-
-      //@media(min-width: 1200px)
-        border-top: 2px solid transparent
-        border-bottom: 2px solid currentColor
-
-    &:nth-child(2)
       color: $main_color
+      position: relative
 
       &::-moz-selection
         background: #fff
 
       &::selection
+        background: #fff
+
+      &::before
+        content: '/'
+        left: -15px
+        pointer-events: none
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        user-select: none
+
+        @media(min-width: 1200px)
+          left: -30px
+
+    //&:nth-child(2)
+      color: $main_color
+
+      //&::-moz-selection
+        background: #fff
+
+      //&::selection
         background: #fff
 
       //@media(min-width: 1200px)
