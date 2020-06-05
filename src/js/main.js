@@ -102,6 +102,26 @@ $(document).ready(function() {
         mobileFirst: true
       });
     }
+
+    //слайдер конфигураций
+    if($('.js-list-8').length) {
+      $('.js-list-8').on('init', function(event, slick) {
+        var list = $('.js-list-8').find('.slick-dots');
+        $.each(list['0'].children, function(index, value) {
+          if(index < 9) {
+            list['0'].children[index].children['0'].innerText = '0' + list['0'].children[index].children['0'].innerText;
+          }
+        });
+      });
+
+      $('.js-list-8').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        mobileFirst: true
+      });
+    }
   }
 
   //слайдер игр

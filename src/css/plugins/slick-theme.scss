@@ -17,16 +17,17 @@
   outline: none;
   background: transparent;
 
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     .slick-arrow__arrow {
-      fill: #c90404;
+      stroke: #fff;
     }
   }
 
   &__arrow {
-    fill: #4d4d4d;
+    fill: none;
     height: 29px;
+    stroke: #fff;
     width: 14px;
   }
 }
@@ -58,10 +59,7 @@
   font-size: 15px;
   width: 100%;
   padding: 0;
-  margin-top: 35px;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 35px 0 0;
   list-style: none;
   text-align: center;
 }
